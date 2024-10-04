@@ -152,22 +152,6 @@ public:
     }
     float getBedAngle() const { return bedAngle; }
 };
-
-// Class: BedTemperatureSystem
-// Inputs: 
-// - bedTemperature (float)
-// Outputs: 
-// - regulatedTemperature (float)
-// Purpose: Regulates the bed temperature based on readings from the Bed Temperature Monitor.
-class BedTemperatureSystem {
-private:
-    float bedTemperature;
-    float regulatedTemperature;
-public:
-    void setBedTemperature(float temp) { bedTemperature = temp; }
-    void regulateTemperature() {
-        // Logic to regulate bed temperature
-        regulatedTemperature = bedTemperature; // Example logic
     }
     float getRegulatedTemperature() const { return regulatedTemperature; }
 };
@@ -242,3 +226,6 @@ public:
     float getRegulatedGlucose() const { return regulatedGlucose; }
 };
 
+class PatientData {
+    
+}
